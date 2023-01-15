@@ -9,6 +9,7 @@ body {
   color: #FFFFFF;
 }
 
+/* ========================================= Header top and bottom common style  ========================================== */
 header .top-section,
 header .bottom-section {
   width: 100%;
@@ -54,6 +55,8 @@ p {
 }
 
 /* ==================================================Main starts ======================================================== */
+
+
 .heading {
   text-align: center;
   margin: 0 0px;
@@ -89,6 +92,9 @@ p {
 .banner {
   margin-top: 50px;
   padding-bottom: 45px;
+}
+.banner img {
+  width: 100%;
 }
 
 /* ========================================Feature section ======================================== */
@@ -261,4 +267,88 @@ p {
   padding: 39px 0;
   margin-bottom: 216px;
 }
+
 /* ===============================================...END...========================================================== */
+
+/* ===============================================Media Query Starts ================================================ */
+
+@media only screen and (max-width: 576px) {
+    .container {
+      width: 100%;
+    }
+    .header {
+      flex-direction:column
+    }
+    .header-menu ul {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .header-menu ul li {
+      margin: 0px;
+      text-align: center;
+      padding: 0 0 5px;
+    }
+    .heading h1 {
+      font-size: 2em;
+      padding-top: 20px;
+    }
+    /* ===================== Header Done======================== */
+    .banner img {
+      width: 100%; 
+    }
+    .features-top {
+      grid-template-columns: 1fr;
+    }
+    .feature-left {
+      grid-template-columns: 1fr;
+    }
+    .feature-right h1, p {
+      text-align: center;
+    }
+    /*==================================== blog ============*/
+    .blogs {
+      grid-template-columns: 1fr;
+    }
+    .blogs-image img {
+      width: 100%;
+    }
+    .blogs-left p {
+      text-align: center;
+      padding: 0;
+    }
+    .blogs-left h1, h4 {
+      text-align: center;
+      padding: 0;
+    }
+    .blogs-left h1 p {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    /* =========================== Feature-section =============== */
+    .feature-right {
+      text-align: center;
+    }
+    .experience-btn {
+      display: none;
+    }
+    .facts-section {
+      text-align: center;
+    }
+    .data {
+      grid-template-columns: 1fr;
+    }
+    .sponsor-brands ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    .sponsor-brands img {
+      padding-bottom: 25px;
+    }
+    .article-box {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+}
