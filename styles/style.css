@@ -94,7 +94,7 @@ h1 {
   grid-template-columns: repeat(2, 1fr);
   gap: 73px;
   align-items: center;
-  margin-top: 85px;
+  margin: 85px 45px 0px;
 }
 
 .feature-left {
@@ -106,9 +106,11 @@ h1 {
 .feature-left img {
   width: 100%;
 }
+
 .feature-right h1 {
   margin-bottom: 40px;
 }
+
 .feature-right .gray {
   color: #727272;
   font-weight: 500;
@@ -116,7 +118,7 @@ h1 {
 }
 
 .feature-right .orange {
-  color: #FF900E;
+  color: #ff900e;
 }
 
 .feature-right p {
@@ -124,4 +126,58 @@ h1 {
   font-size: 16px;
   color: #727272;
   margin-bottom: 32px;
+}
+
+/* ============================================= Blogs/ Middle section start ===================================== */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 54px;
+  margin-top: 130px;
+  position: relative;
+}
+
+.blogs-left h1 {
+  padding: 0px 25px;
+  border-left: 5px solid #ff900e;
+}
+
+.blogs-left p {
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+  padding-right: 80px;
+}
+
+
+/* =================================== Article section =================================== */
+.article-box {
+  width: 570px;
+  height: 150px;
+  box-shadow: 5px 5px 15px #f2f0f0;
+  padding: 20px;
+  margin: 20px 0 20px 20px;
+  border-radius: 10px;
+}
+
+.article-box h4 {
+  color: #131313;
+}
+
+/* ======================================= Right image and Experience Button section =================================*/
+.blogs-image img {
+  width: 100%;
+}
+.experience-btn {
+  width: 342px;
+  height: 200px;
+}
+.years-experience {
+  font-weight: 700;
+  font-size: 65px;
+}
+.experience {
+  position: absolute;
+  bottom: 0;
+  right: 440px;
 }
