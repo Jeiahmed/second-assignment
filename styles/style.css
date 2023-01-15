@@ -9,8 +9,8 @@ body {
   color: #FFFFFF;
 }
 
-.top-section,
-.bottom-section {
+header .top-section,
+header .bottom-section {
   width: 100%;
   background: rgba(255, 144, 14, 0.1);
 }
